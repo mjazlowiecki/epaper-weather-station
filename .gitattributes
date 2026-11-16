@@ -1,0 +1,11 @@
+# Normalize line endings: LF in the repo and in the working copy
+* text=auto eol=lf
+
+# Windows scripts need CRLF
+*.bat text eol=crlf
+
+# Altium files: never touch line endings or diff as text
+*.SchDoc binary
+*.PcbDoc binary
+*.SchLib binary
+*.PcbLib binary
